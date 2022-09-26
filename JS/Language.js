@@ -1,0 +1,17 @@
+$(document).ready(function(){
+    $('.ru').click(function(e){
+        $('.ru').toggleClass('active');
+        $('.en').removeClass('active');
+        $('.cn').removeClass('active');
+    });
+    $('.en').click(function(e){
+        $('.en').toggleClass('active');
+        $('.ru').removeClass('active');
+        $('.cn').removeClass('active');
+    });
+    $('.cn').click(function(e){
+        $('.cn').toggleClass('active');
+        $('.en').removeClass('active');
+        $('.ru').removeClass('active');
+    });
+});
